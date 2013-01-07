@@ -1,0 +1,42 @@
+<!--==============================header=================================-->
+<header>
+<h1><a href="{{HOME_PATH}}"><img src="{{BASE_PATH}}/images/logo.png" alt="" width="318px" height="128px"></a></h1>
+<nav>
+<ul class="menu">
+	<li><a href="{{BASE_PATH}}/index.html">首页</a></li>
+	<li><a href="{{BASE_PATH}}/about.html">关于我们</a></li>
+	<li><a href="{{BASE_PATH}}/services.html">解决方案</a></li>
+	<li><a href="{{BASE_PATH}}/products.html">成功案例</a></li>
+	<li><a href="{{BASE_PATH}}/contacts.html">联系我们</a></li>
+</ul>
+</nav>
+</header>
+
+<!--==============================content================================-->
+<section id="content"><div class="ic"></div>
+<div class="slogan top-1">
+	<p>我们<span class="clr-1">提供</span>给客户<span class="clr-1">最高</span> 标准<span class="clr-1">的解决方案</span></p>
+	<p>臻和智能建筑，为您打造节能，舒适，安全的工作及生活空间!</p>
+</div>
+
+<div class="page3-row1">
+	<h2><span class="clr-1"></span>{{ page.title }}</h2>
+
+
+{{ content }}
+
+<address class="signature">
+	<span class="date">{{ page.date | date_to_long_string }}</span>
+</address>
+
+<br/>
+<div class="prev-next">
+	{% if page.next %}
+	<a href="{{ page.next.url }}" class="next" title="{{ page.next.title }}">{{ page.next.title }} &rarr;</a>
+	{% endif %}
+	{% if page.previous %}
+	<a href="{{ page.previous.url }}" class="prev" title="{{ page.previous.title }}">&larr; {{ page.previous.title }}</a>
+	{% endif %}
+</div>
+</div>
+</section>

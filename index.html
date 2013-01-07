@@ -1,0 +1,84 @@
+---
+layout: default
+title: 首页
+tagline: Supporting tagline
+---
+{% include JB/setup %}
+<script>
+	$(document).ready(function(){
+		$('.slider')._TMS({
+			show:0,
+			pauseOnHover:true,
+			prevBu:'.prev',
+			nextBu:'.next',
+			playBu:false,
+			duration:800,
+			preset:'fade',
+			pagination:'.pags',
+			pagNums:false,
+			slideshow:1000,
+			numStatus:false,
+			banners:'fade',
+			waitBannerAnimation:false,
+			progressBar:false
+		})
+	});
+</script>
+
+
+<!--==============================header=================================-->
+<header>
+<h1><a href="index.html"><img src="images/logo.png" alt="" width="318px" height="128px"></a></h1>
+<nav>
+<ul class="menu">
+	<li class="current"><a href="index.html">首页</a></li>
+	<li><a href="about.html">关于我们</a></li>
+	<li><a href="services.html">解决方案</a></li>
+	<li><a href="products.html">成功案例</a></li>
+	<li><a href="contacts.html">联系我们</a></li>
+</ul>
+</nav>
+<div id="slide">
+	<div class="slider">
+		<ul class="items">
+			<li><img src="images/slider-1.jpg" alt="" /><div class="banner"><div class="banner-1"></div><a href="{{site.posts[0].url}}" class="button-1">阅读更多</a></div></li>
+			<li><img src="images/slider-2.jpg" alt="" /><div class="banner"><div class="banner-2"></div><a href="{{site.posts[0].url}}" class="button-1">阅读更多</a></div></li>
+			<li><img src="images/slider-3.jpg" alt="" /><div class="banner"><div class="banner-3"></div><a href="{{site.posts[6].url}}" class="button-1">阅读更多</a></div></li>
+		</ul>
+	</div>
+	<a href="#" class="prev"></a><a href="#" class="next"></a>
+	<div class="line-left"></div>
+	<div class="line-right"></div>
+	<ul class="pags"></ul>
+</div>
+</header>
+
+<!--==============================content================================-->
+<section id="content"><div class="ic"></div>
+<div class="slogan">
+	<p>我们<span class="clr-1">提供</span>给客户<span class="clr-1">最高</span> 标准<span class="clr-1">的解决方案</span></p>
+	<p>臻和智能建筑，为您打造节能，舒适，安全的工作及生活空间!</p>
+</div>
+<div class="wrap page1-row1">
+	<div class="box-1 border-right">
+		<strong class="number number-1">01.</strong>
+		<span class="text-1">敏捷合作</span>
+		<p class="text-3">快速定位需求，对客户所需进行深进的挖掘，评估并做出概要设计，给出预算报价。</p>
+	</div>
+	<div class="box-1 border-right">
+		<strong class="number number-2">02.</strong>
+		<span class="text-1">专业设计</span>
+		<p class="text-3">拥有专业和具有创造力的设计团队，注重设计细节，充分认识客户需求，能够对产品和战略上有全局的思考，对产品发展有预期的目标和规划。</p>
+	</div>
+	<div class="box-1 border-right">
+		<strong class="number number-3">03.</strong>
+		<span class="text-1">高效实施</span>
+		<p class="text-3">严格按照工程实施规范执行，对实施任务坚决完成，不搞变通，不打折扣，言必行，行必果。</p>
+	</div>
+	<div class="box-1 last">
+		<strong class="number number-4">04.</strong>
+		<span class="text-1">丰富经验</span>
+		<p class="text-3">对不同行业的众多客户的服务过程中经过不断的消化、提炼和完善对其产品内涵形成了十分深刻的理解，并在实施服务领域中积累了丰富的实战经验。</p>
+	</div>
+</div>
+</section>

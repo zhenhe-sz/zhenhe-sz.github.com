@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>{{ page.title }} &larr; 致力于高效智能解决方案</title>
+		<meta name="author" content="{{ site.author.name }}" />
+
+		<link rel="start" href="{{ HOME_PATH }}" />
+
+		{% if page.keywords %}
+		<meta name="keywords" content="{{ page.keywords }}">
+		{% endif %}
+		<link rel="stylesheet" type="text/css" media="screen" href="{{ ASSET_PATH }}/css/reset.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="{{ ASSET_PATH }}/css/screen.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="{{ ASSET_PATH }}/css/style.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="{{ ASSET_PATH }}/css/slider.css">
+		<link href='http://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Passion+One:400,700' rel='stylesheet' type='text/css'>
+		<script src="{{ ASSET_PATH }}/js/jquery-1.7.min.js"></script>
+		<script src="{{ ASSET_PATH }}/js/jquery.easing.1.3.js"></script>
+		<script src="{{ ASSET_PATH }}/js/tms-0.4.1.js"></script>
+		<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+			</a>
+		</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/html5.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body id="{{ page.section }}">
+		<div class="bg">
+			<div class="bg-2">
+
+				{{ content }}
+				<!--==============================aside=================================-->
+				<aside>
+				<div class="wrap">
+					<div class="aside-col-1 border-right-2">
+						<h3><span class="clr-1"></span>订阅我们:</h3>
+						<form id="form-search" method="post">
+							<span>邮件地址:</span>
+							<input type="text" value="" onBlur="if(this.value=='') this.value=''" onFocus="if(this.value =='' ) this.value=''"  />
+							<a href="#"  class="link-2">订阅</a>
+						</form>
+					</div>
+					<div class="aside-col-2 border-right-2">
+						<h3><span class="clr-1"></span>网站地图:</h3>
+						<ul class="list-1">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="about.html">关于我们</a></li>
+							<li><a href="services.html">解决方案</a></li>
+							<li><a href="products.html">成功案例</a></li>
+							<li><a href="contacts.html">联系我们</a></li>
+						</ul>
+					</div>
+					<div class="aside-col-3 border-right-2">
+						<h3><span class="clr-1"></span>联系方式:</h3>
+						<dl class="adrss">
+							<dd><span>电话:</span><strong>0512-66158016</strong></dd>
+							<dd><span>移动电话:</span><strong>086-13814889991</strong></dd>
+							<dd><span>传真:</span><strong>0512-66158015</strong></dd>
+						</dl>
+						 <p style="color:#97b0b9;"><strong>苏州市相城区采莲路1039号开元银座B616室</strong></p>
+					</div>
+					<div class="aside-col-4">
+						<h3><span class="clr-1"></span>服务方案:</h3>
+						<ul class="list-1">
+							<li><a href="{{site.posts[0].url}}">电动双轨折叠式天篷帘</a></li>
+							<li><a href="{{site.posts[1].url}}">电动张紧式天篷帘</a></li>
+							<li><a href="{{site.posts[2].url}}">电动百叶翻板系统</a></li>
+							<li><a href="{{site.posts[3].url}}">钢丝导向折叠式天篷帘</a></li>
+							<a href="/services.html" class="link-2" align="right">更多...</a>
+						</ul>
+					</div>
+				</div>
+				</aside>
+			</div>
+		</div>
+
+		<!--==============================footer=================================-->
+		<footer>
+		<p><strong>版权及最终解释权: © 2013 臻和智能建筑 </strong><br>
+		<p>Copyright © 2013 ZhenHe Architectrue Limited All Rights Reserved.</p>
+		</footer>
+
+		<!--[if IE 6]>
+		<script type="text/javascript">
+			/*Load jQuery if not already loaded*/ if(typeof jQuery == 'undefined'){ document.write("<script type=\"text/javascript\"   src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></"+"script>"); var __noconflict = true; }
+				var IE6UPDATE_OPTIONS = {
+icons_path: "http://static.ie6update.com/hosted/ie6update/images/"
+				}
+			</script>
+			<script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script>
+			<![endif]-->
+
+			<!--
+			{% include JB/analytics %}
+			-->
+		</body>
+	</html>
